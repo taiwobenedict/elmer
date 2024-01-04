@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
 }
@@ -223,7 +227,7 @@ body {
 
 
 .img-container {
-    width: 400px;
+    max-width: 400px;
     height: 400px;
     position: relative;
     margin-inline: auto;
@@ -260,7 +264,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 320px;
+    max-width: 320px;
     border-radius: 50%;
 }
 
