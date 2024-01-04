@@ -4,53 +4,43 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #36454F;
+img {
+    width: 100%;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0px auto;
+body {
+    background-color: #fc9107;
 }
 
 @font-face {
     font-family: mickey;
     src: url(fonts/MICKEY.TTF);
-  }
-  
-
-header  {
-    position: relative;
-    height: 100vh;
 }
 
 .navbar {
+    z-index: 1000;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    background-color: rgba(53, 59, 65, 0.95) !important;
+    top: 0;
 }
 
-.hero-video {
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%); */
+.navbar-brand {
+    max-width: 60px !important;
 }
 
+.nav-link {
+    margin-inline: 1rem !important;
+}
+
+/* Hero section */
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
+    height: 100vh;
 }
 
 
@@ -63,21 +53,18 @@ header  {
     width: 100%;
     background-color: #000000;
     z-index: -1;
-    opacity: 0.4;
-} 
-
-.hero-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    opacity: 0.6;
 }
 
-.hero-image {
-    width: 60px;
-    /* filter: grayscale(30%);
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%); */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .heading-4 {
@@ -89,39 +76,151 @@ header  {
     line-height: 1;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
 
-ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-.navbar a {
-    color: #DCB45E;
-    font-size: 20px;
-    padding: 10px 20px;
-    margin: 0 5px;
-    text-decoration: none;
+
+
+
+/* Roadmap */
+
+#roadmap {
+    margin-top: 4rem;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
+.road-heading {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+
+}
+
+.road-text {
+    position: absolute;
+    z-index: 3;
     color: #fff;
-    opacity: 0.8;
-    width: 100%;
-    height: 70px;
-    position: fixed;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
+
+.road-text li {
+    margin-inline: 1rem;
+}
+
+.road-text2 {
+    right: 10px;
+    top: 25px;
+}
+
+
+.road-curve {
+    width: 100%;
+    height: 170px;
+    border-style: dashed;
+    border-color: #333;
+    border-radius: 200px;
+    position: relative;
+}
+
+.road-curve1 {
+    border-left: none;
+    transform: translateY(3px);
+}
+
+.road-curve2 {
+    border-right: none;
+
+}
+
+.road-curve3 {
+    border-bottom: dashed;
+    border-left: none;
+    transform: translateY(-3px);
+}
+
+.road-cover {
+    height: 101%;
+    width: 100px;
+    background-color: #fc9107;;
+    position: absolute;
+}
+
+.road-cover2 {
+    right: 0;
+}
+
+.date {
+    position: absolute;
+    font-size: 2rem;
+    border: solid #333 2px;
+    padding: 2px 20px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #fc9107;
+    color: #fff;
+}
+
+.date1 {
+    top: -30px;
+    left: 15%;
+}
+
+.date2 {
+    top: -30px;
+    right: 15%;
+}
+
+
+.road-image {
+    max-width: 110px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(50px);
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}
+
+
+.image1 {
+    right: 0;
+}
+
+.image2 {
+    top: -120px;
+}
+
+.image3 {
+    right: 30%;
+}
+
+.image4 {
+    left: 10%;
+}
+
+.image5 {
+    bottom: 0;
+}
+
+.image6 {
+    right: 0;
+}
+
+.image7, .image8 {
+    left: 50%;
+}
+
 
 .img-container {
     width: 400px;
@@ -131,26 +230,22 @@ ul {
     margin-top: 50px;
 }
 
+
 /* Tokenomics */
+
+#tokenomics {
+    background-color: #002a2a;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-top: 5rem;
+}
 .img-circle {
     width: 100%;
     height: 100%;
     background: url("images/img-circle.png") center center/cover no-repeat;
-    animation: rotateAnimation 4s linear infinite; 
-    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%); */
+    animation: rotateAnimation 4s linear infinite;
 }
-/* 
-.img-container img {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%);
-} */ 
 
-.token-heading {
-    max-width: 400px;
-    display: flex;
-    margin: 0px auto;
-}
 
 .token-heading .token-text {
     font-size: 3rem;
@@ -159,7 +254,8 @@ ul {
 
 
 
-.image, .token-text {
+.image,
+.token-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -172,6 +268,7 @@ ul {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(1turn);
     }
@@ -185,15 +282,64 @@ ul {
 
 .img-token {
     position: relative;
+    margin-inline: 1rem;
+    max-width: 220px;
 }
+
+.token {
+    width: 100%;
+}
+
 .token-text {
     width: initial;
-    color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
 }
+
+.token-heading {
+    max-width: 340px;
+    height: 100px;
+    display: flex;
+    margin-inline: auto;
+
+
+}
+
 
 /* .img-token img {
     width: 100%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%);
+/* filter: grayscale(100%);
 } */
 
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.i {
+    color: #fff;
+}
+
+.footer-container {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container p {
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
