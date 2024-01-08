@@ -15,6 +15,8 @@ img {
 body {
     background-color: #fc9107;
 }
+
+
 @media (min-width: 1500px) {
     .container-fluid {
         max-width: 2100px !important;
@@ -267,6 +269,7 @@ body {
     position: relative;
     margin-inline: auto;
     margin-top: 50px;
+    overflow: hidden;
 }
 
 
@@ -422,11 +425,29 @@ body {
         left: 0px;
     }
 
+    .date2 {
+        right: 0px;
+        top: 40%;
+
+    }
+    .img-circle {
+        width: 300px;
+        background-size: contain;
+        margin: 0;
+        margin-inline: auto;
+    }
+
+    .img-circle ~ img {
+        width: 230px;
+    }
+
+    
+
   
 
     .road-text.text2 {
-        top: 30px;
-        right: -10px;
+        width: fit-content;
+        top: 20px;
     }
     .road-text.text5{
         left: 10px;
@@ -434,5 +455,9 @@ body {
 
     .road-text.text6 {
         left: 40%;
+    }
+    .road-text.text7 {
+        top: 93%;
+        right: 30%;
     }
 }
