@@ -199,12 +199,12 @@ body {
 
 .date1 {
     top: -30px;
-    left: 15%;
+    left: 10px;
 }
 
 .date2 {
     top: -30px;
-    right: 15%;
+    right: 10px;
 }
 
 
@@ -237,7 +237,7 @@ body {
 }
 
 .image2 {
-    top: -120px;
+    top: -200px;
 }
 
 .image3 {
@@ -381,4 +381,58 @@ body {
     text-align: center;
     justify-content: center;
     font-size: 20px;
+}
+
+
+
+@media (max-width: 756px) {
+    .road-image {
+        max-width: 80px;
+        z-index: -1;
+    }
+
+    .image2 {
+        top: 20px;
+    }
+
+    .image1 {
+        top: 40px;
+    }
+
+    .image5, .image2 {
+        z-index: 1;
+    }
+
+    .image8 {
+        top: 50px;
+        left: 30%;
+    }
+
+
+    .road-text {
+        font-size: 10px;
+    }
+
+    .date {
+        font-size: 15px;
+        top: -20px;
+    }
+
+    .date1 {
+        left: 0px;
+    }
+
+  
+
+    .road-text.text2 {
+        top: 30px;
+        right: -10px;
+    }
+    .road-text.text5{
+        left: 10px;
+    }
+
+    .road-text.text6 {
+        left: 40%;
+    }
 }
